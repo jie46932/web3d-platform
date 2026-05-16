@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Build output
+client/dist/
+
+# Data (clients & history — local only)
+data/clients.json
+data/max-history.json
+data/uploads/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local

@@ -1,0 +1,52 @@
+{
+  "id": "DimensionAnnotation",
+  "name": "尺寸标注",
+  "version": "1.0.0",
+  "description": "多锚点动态3D尺寸标注线，虚线+箭头+HTML矢量标签，支持遮挡检测与平滑淡入淡出",
+  "author": "Web3D Platform",
+  "tags": ["3d", "annotation", "dimension", "verge3d"],
+  "params": {
+    "visible": {
+      "type": "toggle",
+      "label": "显示标注",
+      "default": true,
+      "exposed": true,
+      "group": "基础"
+    },
+    "lineColor": {
+      "type": "color",
+      "label": "线条颜色",
+      "default": "#e8e8e8",
+      "exposed": false,
+      "group": "外观"
+    },
+    "fontSize": {
+      "type": "slider",
+      "label": "字号 (px)",
+      "default": 14,
+      "min": 8,
+      "max": 32,
+      "step": 1,
+      "exposed": false,
+      "group": "外观"
+    },
+    "unit": {
+      "type": "select",
+      "label": "长度单位",
+      "default": "cm",
+      "options": ["mm", "cm", "m"],
+      "exposed": true,
+      "group": "数据"
+    },
+    "fadeDuration": {
+      "type": "slider",
+      "label": "淡入淡出时长 (s)",
+      "default": 0.2,
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "exposed": false,
+      "group": "动效"
+    }
+  }
+}

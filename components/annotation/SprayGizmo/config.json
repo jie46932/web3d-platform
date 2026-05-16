@@ -1,0 +1,49 @@
+{
+  "id": "SprayGizmo",
+  "name": "喷水粒子 Gizmo",
+  "version": "1.0.0",
+  "description": "喷水粒子调试面板：位置偏移、喷射方向（仰角/偏航）、散射角、速度。支持写入 patch-server。提取自智能架桥机项目。",
+  "author": "Web3D Platform",
+  "category": "annotation",
+  "tags": ["particle", "spray", "gizmo", "debug", "verge3d"],
+  "params": {
+    "visible": {
+      "label": "显示面板",
+      "type": "toggle",
+      "default": true,
+      "group": "控制",
+      "exposed": true
+    },
+    "sprayStateKey": {
+      "label": "SprayState 对象键名",
+      "type": "text",
+      "default": "_sprayState",
+      "group": "场景",
+      "exposed": false
+    },
+    "patchUrl": {
+      "label": "写入接口 URL",
+      "type": "text",
+      "default": "http://127.0.0.1:3791/patch-spray",
+      "group": "高级",
+      "exposed": false
+    },
+    "enableWrite": {
+      "label": "启用写入按钮",
+      "type": "toggle",
+      "default": true,
+      "group": "高级",
+      "exposed": false
+    },
+    "idleTimeoutMs": {
+      "label": "Gizmo 轮询超时 (ms)",
+      "type": "slider",
+      "min": 100,
+      "max": 5000,
+      "step": 100,
+      "default": 200,
+      "group": "高级",
+      "exposed": false
+    }
+  }
+}

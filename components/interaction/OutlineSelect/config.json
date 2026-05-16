@@ -1,0 +1,79 @@
+{
+  "id": "OutlineSelect",
+  "name": "点击选中高亮（OutlinePass）",
+  "version": "1.0.0",
+  "description": "点击3D物体白色描边高亮（OutlinePass），再次点击取消选中。自动过滤Spray粒子对象。提取自智能架桥机项目。",
+  "author": "Web3D Platform",
+  "category": "interaction",
+  "tags": ["selection", "outline", "highlight", "raycaster", "verge3d"],
+  "params": {
+    "visibleEdgeColor": {
+      "label": "可见边颜色",
+      "type": "text",
+      "default": "#ffffff",
+      "group": "外观",
+      "exposed": true
+    },
+    "hiddenEdgeColor": {
+      "label": "隐藏边颜色",
+      "type": "text",
+      "default": "#000000",
+      "group": "外观",
+      "exposed": false
+    },
+    "edgeStrength": {
+      "label": "边缘强度",
+      "type": "slider",
+      "min": 0.5,
+      "max": 10,
+      "step": 0.5,
+      "default": 3,
+      "group": "外观",
+      "exposed": false
+    },
+    "edgeThickness": {
+      "label": "边缘厚度",
+      "type": "slider",
+      "min": 0.5,
+      "max": 5,
+      "step": 0.5,
+      "default": 1,
+      "group": "外观",
+      "exposed": false
+    },
+    "edgeGlow": {
+      "label": "边缘发光",
+      "type": "slider",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0,
+      "group": "外观",
+      "exposed": false
+    },
+    "pulsePeriod": {
+      "label": "脉冲周期",
+      "type": "slider",
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "default": 0,
+      "group": "动效",
+      "exposed": false
+    },
+    "excludePrefix": {
+      "label": "排除对象名前缀",
+      "type": "text",
+      "default": "Spray",
+      "group": "过滤",
+      "exposed": false
+    },
+    "enabled": {
+      "label": "启用",
+      "type": "toggle",
+      "default": true,
+      "group": "控制",
+      "exposed": true
+    }
+  }
+}

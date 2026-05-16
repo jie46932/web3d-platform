@@ -1,0 +1,75 @@
+{
+  "id": "title-banner",
+  "name": "标题横幅",
+  "version": "1.0.0",
+  "description": "金属光泽双行标题，支持自定义文字、字号、位置，内置发光动画。来自智能架桥机项目。",
+  "category": "annotation",
+  "tags": ["title", "text", "metallic", "animation"],
+  "params": {
+    "line1": {
+      "label": "第一行文字",
+      "type": "text",
+      "default": "川和智能造桥机",
+      "group": "内容",
+      "exposed": true
+    },
+    "line2": {
+      "label": "第二行文字",
+      "type": "text",
+      "default": "零事故更安全",
+      "group": "内容",
+      "exposed": true
+    },
+    "size1": {
+      "label": "第一行字号 (px)",
+      "type": "slider",
+      "min": 16,
+      "max": 72,
+      "step": 1,
+      "default": 38,
+      "group": "样式"
+    },
+    "size2": {
+      "label": "第二行字号 (px)",
+      "type": "slider",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "default": 18,
+      "group": "样式"
+    },
+    "posX": {
+      "label": "水平位置 (px)",
+      "type": "slider",
+      "min": 0,
+      "max": 800,
+      "step": 1,
+      "default": 20,
+      "group": "位置"
+    },
+    "posY": {
+      "label": "垂直位置 (px)",
+      "type": "slider",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "default": 20,
+      "group": "位置"
+    },
+    "animSpeed": {
+      "label": "动画周期 (s)",
+      "type": "slider",
+      "min": 2,
+      "max": 20,
+      "step": 1,
+      "default": 8,
+      "group": "样式"
+    },
+    "visible": {
+      "label": "显示",
+      "type": "toggle",
+      "default": true,
+      "group": "控制"
+    }
+  }
+}

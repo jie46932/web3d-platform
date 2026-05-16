@@ -1,0 +1,71 @@
+{
+  "id": "VideoBackground",
+  "name": "视频背景",
+  "version": "1.0.0",
+  "description": "全屏视频背景组件，支持位移/缩放/透明度调整，与Verge3D场景叠加显示",
+  "author": "Web3D Platform",
+  "tags": ["media", "video", "background", "overlay"],
+  "params": {
+    "videoUrl": {
+      "type": "text",
+      "label": "视频地址",
+      "default": "",
+      "exposed": true,
+      "group": "资源"
+    },
+    "opacity": {
+      "type": "slider",
+      "label": "透明度",
+      "default": 1.0,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "exposed": true,
+      "group": "外观"
+    },
+    "scale": {
+      "type": "slider",
+      "label": "缩放",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 3.0,
+      "step": 0.01,
+      "exposed": false,
+      "group": "外观"
+    },
+    "offsetX": {
+      "type": "slider",
+      "label": "水平偏移 (px)",
+      "default": 0,
+      "min": -500,
+      "max": 500,
+      "step": 1,
+      "exposed": false,
+      "group": "外观"
+    },
+    "offsetY": {
+      "type": "slider",
+      "label": "垂直偏移 (px)",
+      "default": 0,
+      "min": -500,
+      "max": 500,
+      "step": 1,
+      "exposed": false,
+      "group": "外观"
+    },
+    "loop": {
+      "type": "toggle",
+      "label": "循环播放",
+      "default": true,
+      "exposed": false,
+      "group": "播放"
+    },
+    "autoplay": {
+      "type": "toggle",
+      "label": "自动播放",
+      "default": true,
+      "exposed": false,
+      "group": "播放"
+    }
+  }
+}

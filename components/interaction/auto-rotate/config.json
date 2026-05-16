@@ -1,0 +1,35 @@
+{
+  "id": "auto-rotate",
+  "name": "自动旋转",
+  "version": "1.0.0",
+  "description": "空闲一段时间后自动旋转场景，用户操作时立即暂停。来自智能架桥机项目。",
+  "category": "interaction",
+  "tags": ["rotate", "idle", "camera", "auto"],
+  "params": {
+    "idleDelay": {
+      "label": "触发延迟 (s)",
+      "type": "slider",
+      "min": 3,
+      "max": 60,
+      "step": 1,
+      "default": 20,
+      "group": "触发"
+    },
+    "speed": {
+      "label": "旋转速度",
+      "type": "slider",
+      "min": 0.1,
+      "max": 5,
+      "step": 0.1,
+      "default": 1.0,
+      "group": "动作"
+    },
+    "enabled": {
+      "label": "启用",
+      "type": "toggle",
+      "default": true,
+      "group": "控制",
+      "exposed": true
+    }
+  }
+}

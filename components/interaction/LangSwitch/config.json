@@ -1,0 +1,47 @@
+{
+  "id": "LangSwitch",
+  "name": "语言切换（中/英）",
+  "version": "1.0.0",
+  "description": "中英文切换系统：通过 data-zh/data-en 属性自动翻译带标签的 DOM 元素，支持自定义翻译字典。提取自智能架桥机项目。",
+  "author": "Web3D Platform",
+  "category": "interaction",
+  "tags": ["language", "i18n", "switch", "zh", "en", "verge3d"],
+  "params": {
+    "visible": {
+      "label": "启用",
+      "type": "toggle",
+      "default": true,
+      "group": "控制",
+      "exposed": true
+    },
+    "initialLang": {
+      "label": "初始语言",
+      "type": "select",
+      "default": "zh",
+      "options": ["zh", "en"],
+      "group": "行为",
+      "exposed": false
+    },
+    "dictJson": {
+      "label": "翻译字典 (JSON)",
+      "type": "text",
+      "default": "{\"川和智能造桥机\":\"ChuanHe Bridge Builder\",\"零事故更安全\":\"Zero Accident · Safer\",\"动画\":\"Anim\",\"播放\":\"Play\",\"速度\":\"Speed\",\"旋转\":\"Rotate\",\"停转\":\"Stop\",\"重置\":\"Reset\",\"喷水\":\"Water\",\"视角\":\"View\",\"全屏\":\"Full\",\"语言\":\"Lang\",\"场景控制\":\"Scene Control\"}",
+      "group": "内容",
+      "exposed": false
+    },
+    "ctrlPanelSelector": {
+      "label": "场景控制面板选择器",
+      "type": "text",
+      "default": "[id$=\"_panel\"]",
+      "group": "高级",
+      "exposed": false
+    },
+    "langBtnSelector": {
+      "label": "语言按钮选择器",
+      "type": "text",
+      "default": "[id$=\"_lang\"]",
+      "group": "高级",
+      "exposed": false
+    }
+  }
+}

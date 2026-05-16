@@ -1,0 +1,55 @@
+{
+  "id": "FeaturePin",
+  "name": "特性图钉",
+  "version": "1.0.0",
+  "description": "圆形白色图钉，点击展开产品特性说明弹窗，支持3D锚点自动投影跟踪",
+  "author": "Web3D Platform",
+  "tags": ["3d", "annotation", "pin", "popup", "verge3d"],
+  "params": {
+    "visible": {
+      "type": "toggle",
+      "label": "显示图钉",
+      "default": true,
+      "exposed": true,
+      "group": "基础"
+    },
+    "pinCount": {
+      "type": "slider",
+      "label": "图钉数量",
+      "default": 5,
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "exposed": false,
+      "group": "基础"
+    },
+    "pinColor": {
+      "type": "color",
+      "label": "图钉颜色",
+      "default": "#ffffff",
+      "exposed": false,
+      "group": "外观"
+    },
+    "popupBgColor": {
+      "type": "color",
+      "label": "弹窗背景色",
+      "default": "#000000",
+      "exposed": false,
+      "group": "外观"
+    },
+    "line0Color": {
+      "type": "color",
+      "label": "标题颜色",
+      "default": "#ffffff",
+      "exposed": true,
+      "group": "文字"
+    },
+    "line1Color": {
+      "type": "color",
+      "label": "副标题颜色",
+      "default": "#c8c8c8",
+      "exposed": true,
+      "group": "文字"
+    }
+  }
+}

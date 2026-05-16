@@ -1,0 +1,45 @@
+{
+  "id": "CamControls",
+  "name": "相机控制按钮",
+  "version": "1.0.0",
+  "description": "左下角相机控制按钮组：平移开/关、最近距离限制/解除。提取自智能架桥机项目。",
+  "author": "Web3D Platform",
+  "category": "interaction",
+  "tags": ["camera", "control", "pan", "distance", "verge3d"],
+  "params": {
+    "visible": {
+      "label": "显示按钮",
+      "type": "toggle",
+      "default": true,
+      "group": "控制",
+      "exposed": true
+    },
+    "initialEnablePan": {
+      "label": "初始平移状态",
+      "type": "toggle",
+      "default": true,
+      "group": "行为",
+      "exposed": false
+    },
+    "minDistance": {
+      "label": "最近距离限制值",
+      "type": "slider",
+      "min": 0,
+      "max": 50,
+      "step": 0.5,
+      "default": 2,
+      "group": "相机",
+      "exposed": false
+    },
+    "maxDistance": {
+      "label": "最远距离限制值",
+      "type": "slider",
+      "min": 10,
+      "max": 200,
+      "step": 5,
+      "default": 80,
+      "group": "相机",
+      "exposed": false
+    }
+  }
+}

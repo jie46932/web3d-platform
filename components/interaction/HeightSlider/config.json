@@ -1,0 +1,54 @@
+{
+  "id": "HeightSlider",
+  "name": "高度滑块",
+  "version": "1.0.0",
+  "description": "控制桌面/物件高度的交互滑块，驱动3D场景骨骼动画帧，同步LED数字显示",
+  "author": "Web3D Platform",
+  "tags": ["interaction", "slider", "animation", "verge3d"],
+  "params": {
+    "minHeight": {
+      "type": "number",
+      "label": "最低高度 (cm)",
+      "default": 68,
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "exposed": false,
+      "group": "范围"
+    },
+    "maxHeight": {
+      "type": "number",
+      "label": "最高高度 (cm)",
+      "default": 120,
+      "min": 0,
+      "max": 300,
+      "step": 1,
+      "exposed": false,
+      "group": "范围"
+    },
+    "defaultT": {
+      "type": "slider",
+      "label": "默认位置 (0~1)",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "exposed": false,
+      "group": "范围"
+    },
+    "accentColor": {
+      "type": "color",
+      "label": "滑块高亮色",
+      "default": "#00c8ff",
+      "exposed": true,
+      "group": "外观"
+    },
+    "showValue": {
+      "type": "toggle",
+      "label": "显示数值",
+      "default": true,
+      "exposed": true,
+      "group": "外观"
+    }
+  }
+}
